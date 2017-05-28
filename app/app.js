@@ -2,9 +2,7 @@
 
 angular.module('backbaseApp', [
   'ngRoute',
-  'backbaseApp.view1',
-  'backbaseApp.view2',
-  'backbaseApp.version'
+  'backbaseApp.view1'
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
   $locationProvider.hashPrefix('!');
