@@ -1,5 +1,3 @@
-/* app css stylesheet */
-
 @import url('https://fonts.googleapis.com/css?family=Kanit');
 
 body {
@@ -82,7 +80,11 @@ tr {
 	padding:0 5px;
 }
 
-#fieldArea, #historyArea {display: inline-block; *display: inline; zoom: 1; vertical-align: top; float: left;}
+
+#fieldArea, #historyArea {vertical-align: top; float: left;}
+@media only screen and (max-device-width: 736px){
+	#fieldArea, #historyArea {vertical-align: top; float: left;}
+}
 #fieldArea {width: 300px; height: auto; background: white;}
 #historyArea {width: calc(100% - 325px); background: white;}
 
