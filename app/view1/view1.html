@@ -1,11 +1,20 @@
 <div id="view1">
+	<div id="previewArea" ng-show="$scope.preview">
+		<label id="previewPrompt">Do You Wish To Procede With This Transaction?</label>
+		<label class="boldText">FROM ACCOUNT:</label>
+		<label id="fromValue">&nbsp;Free Checking(4692) - Available ${{availableBalance}}</label><br>
+		<label class="boldText">TO ACCOUNT:&nbsp;{{submittedTransaction.merchant}} </label><br>
+		<label>AMOUNT:${{submittedTransaction.amount}}</label><br><br>
+		<Button ng-click="cancelTransaction()">cancel</Button>
+		<Button ng-click="submitTransaction()">SUBMIT</Button>
+	</div>
 	<div id="fieldArea">
 		<form name="form">
 			<label class="boldText">FROM ACCOUNT:</label><br>
 			<label id="fromValue">Free Checking(4692) - Available ${{availableBalance}}</label><br>
 			<label class="boldText">TO ACCOUNT:<br> &nbsp;<input type="text" name="toValue" ng-model="newTransaction.merchant"></label><br>
 			<label>AMOUNT:<br>$<input type="number" name="amount" ng-model="newTransaction.amount"></label><br><br>
-			<Button ng-click="reviewTransaction()">SUBMIT</Button>
+			<Button ng-click="validateTransaction()">SUBMIT</Button>
 		</form>
 	</div>
 	<div id="historyArea">
