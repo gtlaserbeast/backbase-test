@@ -82,11 +82,11 @@ tr {
 
 
 #fieldArea, #historyArea {vertical-align: top; float: left;}
-@media only screen and (max-device-width: 736px){
-	#fieldArea, #historyArea {vertical-align: top; float: left;}
-}
 #fieldArea {width: 300px; height: auto; background: white;}
 #historyArea {width: calc(100% - 325px); background: white;}
+@media only screen and (max-device-width: 1000px){
+	#fieldArea, #historyArea {vertical-align: top; float: left;}
+}
 
 #fromValue {
 	background: white;
