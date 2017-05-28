@@ -1,0 +1,27 @@
+{
+  "name": "backbase-test",
+  "private": true,
+  "version": "0.0.0",
+  "description": "backbase skills test using angularjs",
+  "repository": "",
+  "license": "MIT",
+  "engines": {
+    "node": "6.10.3"
+  },
+  "dependencies": {
+    "bower": "^1.7.7"
+  },
+  "devDependencies": {
+    "bower": "^1.7.7",
+    "http-server": "^0.9.0"
+  },
+  "scripts": {
+    "postinstall": "bower install",
+
+    "update-deps": "npm update",
+    "postupdate-deps": "bower update",
+
+    "prestart": "npm install",
+    "start": "http-server -a localhost -p 8000 -c-1 ./app",
+  }
+}

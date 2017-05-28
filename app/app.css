@@ -1,0 +1,68 @@
+/* app css stylesheet */
+
+@import url('https://fonts.googleapis.com/css?family=Kanit');
+
+body {
+	font-family: 'Kanit';
+}
+
+button {
+	background: #e25a2c;
+	color: white;
+}
+
+table {
+	height: 50%;
+	width: 100%;
+	border: 1px solid #D3D3D3;
+}
+
+td {
+	height: 80px;
+}
+
+tr {
+	border-bottom: 1px solid #D3D3D3;
+}
+
+.menu {
+	list-style: none;
+	border-bottom: 0.1em solid #e25a2c;
+	margin-bottom: 2em;
+	padding: 0 0 0.5em;
+}
+
+.menu > li {
+	display: inline;
+}
+
+.menu > li + li:before {
+	content: "|";
+	padding-right: 0.3em;
+}
+
+.logo {
+	height: 40px;
+	filter: grayscale(100%);
+}
+
+#view1Heading {
+	color: white;
+	background-color: #0C8397;
+}
+
+#view1 {
+	width: 100%;
+	height: 100%;
+	padding:0 5px;
+}
+
+#fieldArea, #historyArea {display: inline-block; *display: inline; zoom: 1; vertical-align: top; float: left; padding:0 5px;}
+#fieldArea {width: 300px; height: 300px; background: transparent;}
+#historyArea {width: calc(100% - 325px); background: transparent;}
+
+#fromValue {
+	background: white;
+	border-color: black;
+	font-size: 14px;
+}
