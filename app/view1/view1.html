@@ -4,14 +4,14 @@
 			<label class="boldText">FROM ACCOUNT:</label><br>
 			<label id="fromValue">Free Checking(4692) - Available ${{availableBalance}}</label><br>
 			<label class="boldText">TO ACCOUNT:<br> &nbsp;<input type="text" name="toValue" ng-model="newTransaction.merchant"></label><br>
-			<label>AMOUNT:<br>$<input type="number" name="amount" ng-model="newTransaction.amount"></label><br>
+			<label>AMOUNT:<br>$<input type="number" name="amount" ng-model="newTransaction.amount"></label><br><br>
 			<Button ng-click="reviewTransaction()">SUBMIT</Button>
 		</form>
 	</div>
 	<div id="historyArea">
 		<table>
 			<thead>
-				<tr><th id="view1Heading"colspan="5">Recent Transactions</th></tr>
+				<tr><th id="view1Heading" colspan="5"><img src="assets/img/briefcase.png">Recent Transactions</th></tr>
 			</thead>
 			<tbody>
 				<tr ng-repeat="transaction in transactionHistory">
@@ -29,7 +29,7 @@
 							<B>{{transaction.merchant}}</B><br><small>{{transaction.transactionType}}</small>
 						</div>
 					</td>
-					<td><div><B>-${{transaction.amount}}</B></div></td>
+					<td><div><B>-${{transaction.amount | number:2}}</B></div></td>
 				</tr>
 			</tbody>
 		</table>

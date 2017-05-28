@@ -4,11 +4,39 @@
 
 body {
 	font-family: 'Kanit';
+	padding: 0;
+	margin: 0;
+	height: 100%;
 }
 
 button {
 	background: #e25a2c;
 	color: white;
+	display: inline-block;
+	margin: 0 10px 0 0;
+	padding: 5px 15px;
+	font-size: 48px;
+	line-height: 1.8;
+	appearance: none;
+	box-shadow: none;
+	border-radius: 0;
+	text-shadow: -1px 1px #964C33;
+	border: none;
+	border-radius: 2px;
+}
+
+button:focus {
+	outline: none
+}
+
+button:hover {
+	background-color: #C8481C;
+	text-shadow: -1px 1px #964C33;
+}
+
+button:active {
+	background-color: #E6744C;
+	text-shadow: -1px 1px #964C33;
 }
 
 table {
@@ -26,10 +54,16 @@ tr {
 }
 
 .menu {
+	line-height: 90px;
+	background-color: white;
 	list-style: none;
-	border-bottom: 0.1em solid #e25a2c;
+	border-bottom: 2px solid #e25a2c;
 	margin-bottom: 2em;
 	padding: 0 0 0.5em;
+}
+
+.body {
+	height: calc(100% - 90px);
 }
 
 .logo {
@@ -46,11 +80,10 @@ tr {
 	width: auto;
 	height: auto;
 	padding:0 5px;
-	background-image: url("assets/img/background.jpg")
 }
 
 #fieldArea, #historyArea {display: inline-block; *display: inline; zoom: 1; vertical-align: top; float: left;}
-#fieldArea {width: 300px; height: 300px; background: white;}
+#fieldArea {width: 300px; height: auto; background: white;}
 #historyArea {width: calc(100% - 325px); background: white;}
 
 #fromValue {
