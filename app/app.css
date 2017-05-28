@@ -32,15 +32,6 @@ tr {
 	padding: 0 0 0.5em;
 }
 
-.menu > li {
-	display: inline;
-}
-
-.menu > li + li:before {
-	content: "|";
-	padding-right: 0.3em;
-}
-
 .logo {
 	height: 40px;
 	filter: grayscale(100%);
@@ -52,14 +43,15 @@ tr {
 }
 
 #view1 {
-	width: 100%;
-	height: 100%;
+	width: auto;
+	height: auto;
 	padding:0 5px;
+	background-image: url("assets/img/background.jpg")
 }
 
-#fieldArea, #historyArea {display: inline-block; *display: inline; zoom: 1; vertical-align: top; float: left; padding:0 5px;}
-#fieldArea {width: 300px; height: 300px; background: transparent;}
-#historyArea {width: calc(100% - 325px); background: transparent;}
+#fieldArea, #historyArea {display: inline-block; *display: inline; zoom: 1; vertical-align: top; float: left;}
+#fieldArea {width: 300px; height: 300px; background: white;}
+#historyArea {width: calc(100% - 325px); background: white;}
 
 #fromValue {
 	background: white;

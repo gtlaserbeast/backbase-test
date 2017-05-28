@@ -3,8 +3,7 @@
 		<form name="form">
 			<label class="boldText">FROM ACCOUNT:</label><br>
 			<label id="fromValue">Free Checking(4692) - Available ${{availableBalance}}</label><br>
-			<label class="boldText">TO ACCOUNT:</label><br>
-			<input type="text" name="toValue" ng-model="newTransaction.merchant"><br>
+			<label class="boldText">TO ACCOUNT:<br> &nbsp;<input type="text" name="toValue" ng-model="newTransaction.merchant"></label><br>
 			<label>AMOUNT:<br>$<input type="number" name="amount" ng-model="newTransaction.amount"></label><br>
 			<Button ng-click="reviewTransaction()">SUBMIT</Button>
 		</form>
