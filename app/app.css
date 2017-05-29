@@ -73,6 +73,12 @@ tr {
 	color: white;
 	background-color: #0C8397;
 	height: 60px;
+	text-align: center;
+}
+
+.icon {
+	display: block;
+	margin: auto auto;
 }
 
 .orangeBackground {
@@ -85,9 +91,15 @@ tr {
 }
 
 .smallText {
-	background: white;
 	color: gray;
 	font-size: 14px;
+}
+
+.whiteCorner {
+	height: 60px;
+	width: 60px;
+	float: left;
+	background-color: white;
 }
 
 #appLogo {

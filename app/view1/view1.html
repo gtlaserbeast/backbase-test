@@ -15,8 +15,12 @@
 	</div>
 	<div id="fieldArea" ng-show="!preview">
 		<div class="heading">
-			<img src="assets/img/arrows.png">
-			<B>Make a Transfer</B>
+			<div class="whiteCorner">
+				<img class="icon" src="assets/img/arrows.png">
+			</div>
+			<label>
+				<B>Make a Transfer</B>
+			</label>
 		</div>
 		<form name="form" autocomplete="off">
 			<label>FROM ACCOUNT:</label><br>
@@ -29,7 +33,7 @@
 	<div id="historyArea">
 		<table>
 			<thead>
-				<tr><th class="heading" colspan="5"><img src="assets/img/briefcase.png">Recent Transactions</th></tr>
+				<tr><td/><td><img src="assets/img/briefcase.png"></td><th class="heading" colspan="3">Recent Transactions</th></tr>
 			</thead>
 			<tbody>
 				<tr ng-repeat="transaction in transactionHistory">
