@@ -13,7 +13,7 @@ button {
 	display: inline-block;
 	margin: 0 10px 0 0;
 	padding: 5px 15px;
-	font-size: 48px;
+	font-size: 24px;
 	line-height: 1.8;
 	appearance: none;
 	box-shadow: none;
@@ -38,7 +38,6 @@ button:active {
 }
 
 table {
-	height: 50%;
 	width: 100%;
 	border: 1px solid #D3D3D3;
 }
@@ -56,8 +55,6 @@ tr {
 	background-color: white;
 	list-style: none;
 	border-bottom: 2px solid #e25a2c;
-	margin-bottom: 2em;
-	padding: 0 0 0.5em;
 }
 
 .body {
@@ -69,7 +66,7 @@ tr {
 	filter: grayscale(100%);
 }
 
-#view1Heading {
+#historyHeading {
 	color: white;
 	background-color: #0C8397;
 }
@@ -77,7 +74,6 @@ tr {
 #view1 {
 	width: auto;
 	height: auto;
-	padding:0 5px;
 }
 
 
