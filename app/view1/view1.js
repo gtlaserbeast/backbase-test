@@ -27,7 +27,11 @@ angular.module('backbaseApp.view1', ['ngRoute'])
 	$scope.validateTransaction = function($event) {
 		//TODO: SHOW MODAL + REVIEW AND THEN SUBMIT
 		if ($scope.newTransaction.amount && $scope.newTransaction.merchant) {
-			$scope.reviewTransaction();
+			if ($scope.availableBalance - $scope.newTransaction.amount > 0) {
+				$scope.reviewTransaction();
+			} else {
+				alert('Insufficient Funds.')
+			}
 		} else {
 			alert('Please Complete All Fields.')
 		}
