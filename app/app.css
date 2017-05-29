@@ -74,6 +74,12 @@ tr {
 	filter: grayscale(100%);
 }
 
+.smallText {
+	background: white;
+	color: gray;
+	font-size: 14px;
+}
+
 #appLogo {
 	max-width: 100%;
 }
@@ -96,9 +102,4 @@ tr {
 
 #cancel {
 	background-color: gray;
-}
-
-#smallText {
-	background: white;
-	font-size: 14px;
 }
