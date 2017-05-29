@@ -128,7 +128,9 @@ tr {
 #appLogo {
 	position: relative;
 	top: 20px;
-	margin: 0 auto;
+	left: 10px;
+	right: 10px;
+	max-width: calc(100% - 20px);
 
 }
 
