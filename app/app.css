@@ -42,7 +42,6 @@ button:active {
 
 table {
 	width: 100%;
-	border: 1px solid #D3D3D3;
 	border-radius: 3px;
 }
 
@@ -52,7 +51,6 @@ td {
 }
 
 tr {
-	border-bottom: 1px solid #D3D3D3;
 	border-radius: 3px;
 }
 
@@ -74,11 +72,13 @@ tr {
 }
 
 .heading {
-	color: white;
+	color: #FFFFFF;
 	background-color: #0C8397;
 	height: 60px;
 	text-align: center;
 	border-top-right-radius: 3px;
+	font-size: 20px;
+	font-weight: lighter;
 }
 
 .icon {
