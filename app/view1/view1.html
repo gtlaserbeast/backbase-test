@@ -1,7 +1,7 @@
 <div id="view1">
 	<div class="buffer"/>
-	<div id="previewArea" ng-show="preview">
-		<div class="heading orangeBackground">
+	<div id="previewArea" class="previewArea" ng-show="preview">
+		<div class="heading orangeBackground previewHeading">
 			<B>Do You Wish To Procede With This Transaction?</B><br>
 		</div>
 		<B>FROM ACCOUNT:</B><br>
@@ -13,8 +13,8 @@
 		<Button id="submit" ng-click="submitTransaction()">TRANSFER</Button><br>
 		<Button id="cancel" ng-click="cancelTransaction()">cancel</Button>
 	</div>
-	<div id="fieldArea" ng-show="!preview">
-		<div class="heading">
+	<div id="fieldArea" class="previewArea" ng-show="!preview">
+		<div class="heading previewHeading">
 			<div class="whiteCorner">
 				<img class="icon" src="assets/img/arrows.png">
 			</div>

@@ -21,10 +21,9 @@ button {
 	line-height: 1.8;
 	appearance: none;
 	box-shadow: none;
-	border-radius: 0;
 	text-shadow: -1px 1px #964C33;
 	border: none;
-	border-radius: 2px;
+	border-radius: 3px;
 }
 
 button:focus {
@@ -76,6 +75,13 @@ tr {
 	background-color: #0C8397;
 	height: 60px;
 	text-align: center;
+	border-radius: 3px;
+}
+
+.previewHeading {
+	position: relative;
+	left: 28px;
+	width: calc(100% - 28px);
 }
 
 .icon {
@@ -92,6 +98,18 @@ tr {
 	filter: grayscale(100%);
 }
 
+.previewArea {
+	width: 275px;
+	height: 350px;
+	background: white;
+	float: left;
+	position: relative;
+	left: 10px;
+	top: 10px;
+	border-color: transparent;
+	border-radius: 3px;
+}
+
 .smallText {
 	color: gray;
 	font-size: 14px;
@@ -102,6 +120,7 @@ tr {
 	width: 60px;
 	float: left;
 	background-color: white;
+	border-radius: 3px;
 }
 
 
@@ -114,11 +133,15 @@ tr {
 	height: auto;
 }
 
-
-/*#fieldArea, #historyArea {vertical-align: top;}*/
-#previewArea {width: 275px; height: 350px; background: white; float: left;}
-#fieldArea {width: 275px; height: 350px; background: white; float: left;}
-#historyArea {min-width: 380px; width: calc(100% - 285px); background: white; float: right;margin: 0 auto;}
+#historyArea {
+	min-width: 380px;
+	width: calc(100% - 305px);
+	background: white;
+	float: right;
+	position: relative;
+	right: 10px;
+	top: 10px;
+}
 
 #submit {
 	background-color: #0C8397;
