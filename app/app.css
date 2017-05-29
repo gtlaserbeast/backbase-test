@@ -16,8 +16,8 @@ button {
 	color: white;
 	display: block;
 	margin: 0 auto;
-	padding: 5px 15px;
-	font-size: 24px;
+	padding: 3px 6px;
+	font-size: 22px;
 	line-height: 1.8;
 	appearance: none;
 	box-shadow: none;
@@ -54,23 +54,6 @@ tr {
 	border-radius: 3px;
 }
 
-.historyCell {
-	height: 80px;
-}
-
-.menu {
-	line-height: 90px;
-	background-color: white;
-	list-style: none;
-	border-bottom: 2px solid #e25a2c;
-}
-
-.main {
-	height: calc(100vh - 92px);
-	min-height: 1000px;
-	background-image: url(assets/img/background.jpg);
-}
-
 .buffer {
 	height: 30px;
 }
@@ -85,19 +68,36 @@ tr {
 	font-weight: lighter;
 }
 
+.historyCell {
+	height: 80px;
+}
+
 .icon {
 	position: relative;
 	top: 20px;
 	left: 20px;
 }
 
-.orangeBackground {
-	background-color: #e25a2c;
-}
-
 .logo {
 	height: 40px;
 	filter: grayscale(100%);
+}
+
+.main {
+	height: calc(100vh - 92px);
+	min-height: 1000px;
+	background-image: url(assets/img/background.jpg);
+}
+
+.menu {
+	line-height: 90px;
+	background-color: white;
+	list-style: none;
+	border-bottom: 2px solid #e25a2c;
+}
+
+.orangeBackground {
+	background-color: #e25a2c;
 }
 
 .previewArea {
@@ -134,9 +134,8 @@ tr {
 
 }
 
-#view1 {
-	width: auto;
-	height: auto;
+#cancel {
+	background-color: gray;
 }
 
 #historyArea {
@@ -150,12 +149,13 @@ tr {
 	border-radius: 3px;
 }
 
-#submit {
+#transfer {
 	background-color: #0C8397;
 }
 
-#cancel {
-	background-color: gray;
+#view1 {
+	width: auto;
+	height: auto;
 }
 
 /*The following block helps with background image layout on small devices*/

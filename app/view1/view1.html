@@ -1,23 +1,6 @@
 <div id="view1">
-	<!-- Preview View -->
-	<div id="previewArea" class="previewArea" ng-show="preview">
-		<div class="heading orangeBackground">
-			<div class="whiteCorner">
-				<img class="icon" src="assets/img/arrows.png">
-			</div>
-			Preview Transfer
-		</div>
-		<B>FROM ACCOUNT:</B><br>
-		<label class="smallText">&nbsp;Free Checking(4692) - Available {{availableBalance | currency}}</label><br>
-		<B>TO ACCOUNT:</B><br>
-		<label class="smallText">&nbsp;{{submittedTransaction.merchant}}</label><br>
-		<B>AMOUNT:</B><br>
-		<label class="smallText">&nbsp;{{submittedTransaction.amount | currency}}</label><br>
-		<Button id="submit" ng-click="submitTransaction()">TRANSFER</Button><br>
-		<Button id="cancel" ng-click="cancelTransaction()">cancel</Button>
-	</div>
 	<!-- Entry View -->
-	<div id="fieldArea" class="previewArea" ng-show="!preview">
+	<div id="entryArea" class="previewArea">
 		<form name="form" autocomplete="off">
 			<table>
 				<thead>
@@ -27,7 +10,8 @@
 								<img class="icon" src="assets/img/arrows.png">
 							</div>
 						</td>
-						<td class="heading" colspan="2">Make a Transfer</td>
+						<td ng-show="!preview" class="heading" colspan="2">Make a Transfer</td>
+						<td ng-show="preview" class="heading orangeBackground">Proceed With Transfer?</td>
 					</tr>
 				</thead>
 				<tbody>
@@ -44,7 +28,8 @@
 					</tr>
 					<tr>
 						<td colspan="3">
-							<input class="smallText" type="text" name="toValue" ng-model="newTransaction.merchant">
+							<input ng-show="!preview" class="smallText" type="text" name="toValue" ng-model="newTransaction.merchant">
+							<label ng-show="preview" class="smallText">{{submittedTransaction.merchant}}</label>
 						</td>
 					</tr>
 					<tr>
@@ -52,11 +37,22 @@
 					</tr>
 					<tr>
 						<td colspan="3">
-							$<input class="smallText" type="number" name="amount" ng-model="newTransaction.amount">
+							<label ng-show="!preview">$<input class="smallText" type="number" name="amount" ng-model="newTransaction.amount"></label>
+							<label ng-show="preview" class="smallText">{{submittedTransaction.amount | currency}}</label>
 						</td>
 					</tr>
-					<tr>
-						<td colspan="3"><Button ng-click="validateTransaction()">SUBMIT</Button></td>
+					<tr ng-show="!preview">
+						<td colspan="3">
+							<Button ng-click="validateTransaction()">SUBMIT</Button>
+						</td>
+					</tr>
+					<tr ng-show="preview">
+						<td>
+							<Button id="cancel" ng-click="cancelTransaction()">cancel</Button>
+						</td>
+						<td colspan="2">
+							<Button id="transfer" ng-click="submitTransaction()">TRANSFER</Button>
+						</td>
 					</tr>
 				</tbody>
 			</table>
