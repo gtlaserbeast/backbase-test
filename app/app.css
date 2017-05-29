@@ -8,7 +8,7 @@ body {
 	font-family: 'Kanit';
 	padding: 0;
 	margin: 0;
-	height: 100%;
+	height: 100vh;
 }
 
 button {
@@ -61,8 +61,10 @@ tr {
 	border-bottom: 2px solid #e25a2c;
 }
 
-.body {
-	height: calc(100% - 90px);
+.main {
+	height: calc(100vh - 92px);
+	min-height: 1000px;
+	background-image: url(assets/img/background.jpg);
 }
 
 .buffer {
