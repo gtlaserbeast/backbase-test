@@ -102,6 +102,7 @@ tr {
 	background-color: white;
 }
 
+
 #appLogo {
 	max-width: 100%;
 }
@@ -123,4 +124,10 @@ tr {
 
 #cancel {
 	background-color: gray;
+}
+
+@media screen and (max-width: 768px) {
+	#previewArea {width: 275px; height: 350px; background: white; display: block; margin: 0 auto;}
+	#fieldArea {width: 275px; height: 350px; background: white; display: block; margin: 0 auto;}
+	#historyArea {min-width: 380px; width: calc(100% - 285px); background: white; display: block; margin: 0 auto;}
 }
