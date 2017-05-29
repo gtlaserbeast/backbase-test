@@ -18,18 +18,48 @@
 	</div>
 	<!-- Entry View -->
 	<div id="fieldArea" class="previewArea" ng-show="!preview">
-		<div class="heading">
-			<div class="whiteCorner">
-				<img class="icon" src="assets/img/arrows.png">
-			</div>
-			Make a Transfer
-		</div>
 		<form name="form" autocomplete="off">
-			<label>FROM ACCOUNT:</label><br>
-			<label class="smallText">Free Checking(4692) - Available {{availableBalance | currency}}</label><br>
-			<label>TO ACCOUNT:<br> &nbsp;<input class="smallText" type="text" name="toValue" ng-model="newTransaction.merchant"></label><br>
-			<label>AMOUNT:<br>$<input class="smallText" type="number" name="amount" ng-model="newTransaction.amount"></label><br><br>
-			<Button ng-click="validateTransaction()">SUBMIT</Button>
+			<table>
+				<thead>
+					<tr>
+						<td>
+							<div class="whiteCorner">
+								<img class="icon" src="assets/img/arrows.png">
+							</div>
+						</td>
+						<td class="heading" colspan="2">Make a Transfer</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td colspan="3">FROM ACCOUNT:</td>
+					</tr>
+					<tr>
+						<td colspan="3">
+							<label class="smallText">Free Checking(4692) - Available {{availableBalance | currency}}</label>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="3">TO ACCOUNT:</td>
+					</tr>
+					<tr>
+						<td colspan="3">
+							<input class="smallText" type="text" name="toValue" ng-model="newTransaction.merchant">
+						</td>
+					</tr>
+					<tr>
+						<td colspan="3">AMOUNT:</td>
+					</tr>
+					<tr>
+						<td colspan="3">
+							$<input class="smallText" type="number" name="amount" ng-model="newTransaction.amount">
+						</td>
+					</tr>
+					<tr>
+						<td colspan="3"><Button ng-click="validateTransaction()">SUBMIT</Button></td>
+					</tr>
+				</tbody>
+			</table>
 		</form>
 	</div>
 	<!-- Transaction History View -->
@@ -50,7 +80,7 @@
 					<td>
 						<div>{{transaction.transactionDate | date : "MMM. d"}}</div>
 					</td>
-					<td>
+					<td class="historyCell">
 						<div>
 							<img class="logo" src="{{transaction.merchantLogo}}">
 						</div>
