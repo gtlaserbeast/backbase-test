@@ -70,6 +70,10 @@ tr {
 	filter: grayscale(100%);
 }
 
+#appLogo {
+	max-width: 100%;
+}
+
 #historyHeading {
 	color: white;
 	background-color: #0C8397;
@@ -83,7 +87,7 @@ tr {
 
 #fieldArea, #historyArea {vertical-align: top;}
 #fieldArea {width: 300px; height: auto; background: white; float: left;}
-#historyArea {width: calc(100% - 325px); background: white; float: right;}
+#historyArea {min-width: 600px; width: calc(100% - 325px); background: white; float: right;}
 
 #fromValue {
 	background: white;
