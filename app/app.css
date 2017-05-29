@@ -85,7 +85,7 @@ tr {
 }
 
 
-#fieldArea, #historyArea {vertical-align: top;}
+/*#fieldArea, #historyArea {vertical-align: top;}*/
 #fieldArea {width: 300px; height: auto; background: white; float: left;}
 #historyArea {min-width: 430px; width: calc(100% - 325px); background: white; float: right;}
 
