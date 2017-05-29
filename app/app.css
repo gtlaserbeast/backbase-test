@@ -129,7 +129,9 @@ tr {
 }
 
 @media screen and (max-width: 768px) {
-	#previewArea {width: 275px; height: 350px; background: white; display: block; margin: 0 auto;}
-	#fieldArea {width: 275px; height: 350px; background: white; display: block; margin: 0 auto;}
-	#historyArea {min-width: 380px; width: calc(100% - 285px); background: white; display: block; margin: 0 auto;}
+	.main {
+		height: calc(100vh - 92px);
+		min-height: 1350px;
+		background-image: url(assets/img/background.jpg);
+	}
 }
