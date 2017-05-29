@@ -28,7 +28,7 @@
 					</tr>
 					<tr>
 						<td colspan="3">
-							<input ng-show="!preview" class="smallText" type="text" name="toValue" ng-model="newTransaction.merchant">
+							&nbsp;<input ng-show="!preview" class="smallText" type="text" name="toValue" ng-model="newTransaction.merchant">
 							<label ng-show="preview" class="smallText">{{submittedTransaction.merchant}}</label>
 						</td>
 					</tr>
@@ -73,7 +73,7 @@
 			<tbody>
 				<tr ng-repeat="transaction in transactionHistory">
 					<td width="10px" bgcolor="{{transaction.categoryCode}}" />
-					<td>
+					<td class="historyCell">
 						<div>{{transaction.transactionDate | date : "MMM. d"}}</div>
 					</td>
 					<td class="historyCell">
@@ -81,12 +81,12 @@
 							<img class="logo" src="{{transaction.merchantLogo}}">
 						</div>
 					</td>
-					<td>
+					<td class="historyCell">
 						<div>
 							<B>{{transaction.merchant}}</B><br><small>{{transaction.transactionType}}</small>
 						</div>
 					</td>
-					<td>
+					<td class="historyCell">
 						<div>
 							<B>-{{transaction.amount | currency}}</B>
 						</div>

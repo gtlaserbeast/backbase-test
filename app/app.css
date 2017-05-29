@@ -40,6 +40,12 @@ button:active {
 	text-shadow: -1px 1px #964C33;
 }
 
+input {
+	border: none;
+	border-bottom: 2px solid lightgray;
+	width: 95%;
+}
+
 table, td, tr, th {
 	border-radius: 3px
 }
@@ -68,7 +74,7 @@ td {
 
 .historyCell {
 	height: 80px;
-	border-bottom: 1px solid gray;
+	border-bottom: 1px solid lightgray;
 	border-radius: 0px;
 }
 
