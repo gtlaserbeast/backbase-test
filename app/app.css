@@ -69,6 +69,12 @@ tr {
 	height: 30px;
 }
 
+.heading {
+	color: white;
+	background-color: #0C8397;
+	height: 60px;
+}
+
 .logo {
 	height: 40px;
 	filter: grayscale(100%);
@@ -82,11 +88,6 @@ tr {
 
 #appLogo {
 	max-width: 100%;
-}
-
-#historyHeading {
-	color: white;
-	background-color: #0C8397;
 }
 
 #view1 {
