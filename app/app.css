@@ -78,18 +78,13 @@ tr {
 	background-color: #0C8397;
 	height: 60px;
 	text-align: center;
-	border-radius: 3px;
-}
-
-.previewHeading {
-	position: relative;
-	left: 28px;
-	width: calc(100% - 28px);
+	border-top-right-radius: 3px;
 }
 
 .icon {
-	display: block;
-	margin: auto auto;
+	position: relative;
+	top: 16px;
+	left: 0px;
 }
 
 .orangeBackground {
@@ -123,12 +118,15 @@ tr {
 	width: 60px;
 	float: left;
 	background-color: white;
-	border-radius: 3px;
+	border-top-left-radius: 3px;
 }
 
-
 #appLogo {
+	position: relative;
+	top: 20px;
+	left: 10px;
 	max-width: 100%;
+
 }
 
 #view1 {
@@ -155,10 +153,19 @@ tr {
 	background-color: gray;
 }
 
+/*The following block helps with background image layout on small devices*/
 @media screen and (max-width: 665px) {
 	.main {
 		height: calc(100vh - 92px);
 		min-height: 1350px;
 		background-image: url(assets/img/background.jpg);
+	}
+
+	.previewArea {
+		width: calc(100% - 20px);
+	}
+
+	#historyArea {
+		width: calc(100% - 20px);
 	}
 }

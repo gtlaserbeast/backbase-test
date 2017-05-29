@@ -1,8 +1,10 @@
 <div id="view1">
-	<div class="buffer"/>
 	<div id="previewArea" class="previewArea" ng-show="preview">
-		<div class="heading orangeBackground previewHeading">
-			<B>Do You Wish To Procede With This Transaction?</B><br>
+		<div class="heading orangeBackground">
+			<div class="whiteCorner">
+				<img class="icon" src="assets/img/arrows.png">
+			</div>
+			<B>Do You Wish To Procede With This Transaction?</B>
 		</div>
 		<B>FROM ACCOUNT:</B><br>
 		<label class="smallText">&nbsp;Free Checking(4692) - Available {{availableBalance | currency}}</label><br>
@@ -14,13 +16,11 @@
 		<Button id="cancel" ng-click="cancelTransaction()">cancel</Button>
 	</div>
 	<div id="fieldArea" class="previewArea" ng-show="!preview">
-		<div class="heading previewHeading">
+		<div class="heading">
 			<div class="whiteCorner">
 				<img class="icon" src="assets/img/arrows.png">
 			</div>
-			<label>
-				<B>Make a Transfer</B>
-			</label>
+			<B>Make a Transfer</B>
 		</div>
 		<form name="form" autocomplete="off">
 			<label>FROM ACCOUNT:</label><br>
