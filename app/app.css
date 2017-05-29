@@ -94,8 +94,11 @@ tr {
 #fieldArea {width: 300px; height: auto; background: white; float: left;}
 #historyArea {min-width: 430px; width: calc(100% - 325px); background: white; float: right;margin: 0 auto;}
 
-#fromValue {
+#cancel {
+	background-color: gray;
+}
+
+#smallText {
 	background: white;
-	border-color: black;
 	font-size: 14px;
 }

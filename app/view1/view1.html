@@ -1,19 +1,21 @@
 <div id="view1">
 	<div class="buffer"/>
 	<div id="previewArea" ng-show="preview">
-		<label id="previewPrompt">Do You Wish To Procede With This Transaction?</label>
-		<label class="boldText">FROM ACCOUNT:</label>
-		<label id="fromValue">&nbsp;Free Checking(4692) - Available ${{availableBalance}}</label><br>
-		<label class="boldText">TO ACCOUNT:&nbsp;{{submittedTransaction.merchant}} </label><br>
-		<label>AMOUNT:${{submittedTransaction.amount}}</label><br><br>
-		<Button ng-click="submitTransaction()">SUBMIT</Button>
-		<Button ng-click="cancelTransaction()">cancel</Button>
+		<h4>Do You Wish To Procede With This Transaction?</h4>
+		<label><B>FROM ACCOUNT:</B></label><br>
+		<label id="smallText">&nbsp;Free Checking(4692) - Available ${{availableBalance}}</label><br>
+		<label><B>TO ACCOUNT:</B></label><br>
+		<label class="smallText">&nbsp;{{submittedTransaction.merchant}}</label><br>
+		<label><B>AMOUNT:</B><br></label>
+		<label class="smallText">&nbsp;${{submittedTransaction.amount}}</label><br><hr>
+		<Button id="submit" ng-click="submitTransaction()">SUBMIT</Button><br>
+		<Button id="cancel" ng-click="cancelTransaction()">cancel</Button>
 	</div>
 	<div id="fieldArea" ng-show="!preview">
 		<form name="form">
-			<label class="boldText">FROM ACCOUNT:</label><br>
+			<label>FROM ACCOUNT:</label><br>
 			<label id="fromValue">Free Checking(4692) - Available ${{availableBalance}}</label><br>
-			<label class="boldText">TO ACCOUNT:<br> &nbsp;<input type="text" name="toValue" ng-model="newTransaction.merchant"></label><br>
+			<label>TO ACCOUNT:<br> &nbsp;<input type="text" name="toValue" ng-model="newTransaction.merchant"></label><br>
 			<label>AMOUNT:<br>$<input type="number" name="amount" ng-model="newTransaction.amount"></label><br><br>
 			<Button ng-click="validateTransaction()">SUBMIT</Button>
 		</form>
