@@ -87,7 +87,7 @@ tr {
 
 #fieldArea, #historyArea {vertical-align: top;}
 #fieldArea {width: 300px; height: auto; background: white; float: left;}
-#historyArea {min-width: 600px; width: calc(100% - 325px); background: white; float: right;}
+#historyArea {min-width: 500px; width: calc(100% - 325px); background: white; float: right;}
 
 #fromValue {
 	background: white;
