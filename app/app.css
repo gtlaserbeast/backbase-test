@@ -102,8 +102,8 @@ tr {
 	background: white;
 	float: left;
 	position: relative;
-	left: 10px;
-	top: 10px;
+	left: 20px;
+	top: 20px;
 	border-color: transparent;
 	border-radius: 3px;
 }
@@ -136,12 +136,12 @@ tr {
 
 #historyArea {
 	min-width: 380px;
-	width: calc(100% - 305px);
+	width: calc(100% - 335px);
 	background: white;
 	float: right;
 	position: relative;
-	right: 10px;
-	top: 10px;
+	right: 20px;
+	top: 20px;
 	border-radius: 3px;
 }
 
@@ -162,10 +162,11 @@ tr {
 	}
 
 	.previewArea {
-		width: calc(100% - 20px);
+		left: calc((100% - 275px)/2);
 	}
 
 	#historyArea {
-		width: calc(100% - 20px);
+		width: calc(100% - 40px);
+		top: 40px;
 	}
 }

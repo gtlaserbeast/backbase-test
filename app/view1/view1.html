@@ -1,4 +1,5 @@
 <div id="view1">
+	<!-- Preview View -->
 	<div id="previewArea" class="previewArea" ng-show="preview">
 		<div class="heading orangeBackground">
 			<div class="whiteCorner">
@@ -15,6 +16,7 @@
 		<Button id="submit" ng-click="submitTransaction()">TRANSFER</Button><br>
 		<Button id="cancel" ng-click="cancelTransaction()">cancel</Button>
 	</div>
+	<!-- Entry View -->
 	<div id="fieldArea" class="previewArea" ng-show="!preview">
 		<div class="heading">
 			<div class="whiteCorner">
@@ -30,10 +32,17 @@
 			<Button ng-click="validateTransaction()">SUBMIT</Button>
 		</form>
 	</div>
+	<!-- Transaction History View -->
 	<div id="historyArea">
 		<table>
 			<thead>
-				<tr><td/><td><img src="assets/img/briefcase.png"></td><th class="heading" colspan="3">Recent Transactions</th></tr>
+				<tr>
+					<td/>
+					<td>
+						<img src="assets/img/briefcase.png">
+					</td>
+					<th class="heading" colspan="3">Recent Transactions</th>
+				</tr>
 			</thead>
 			<tbody>
 				<tr ng-repeat="transaction in transactionHistory">
@@ -51,7 +60,11 @@
 							<B>{{transaction.merchant}}</B><br><small>{{transaction.transactionType}}</small>
 						</div>
 					</td>
-					<td><div><B>-{{transaction.amount | currency}}</B></div></td>
+					<td>
+						<div>
+							<B>-{{transaction.amount | currency}}</B>
+						</div>
+					</td>
 				</tr>
 			</tbody>
 		</table>
