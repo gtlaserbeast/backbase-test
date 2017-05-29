@@ -139,7 +139,7 @@ tr {
 }
 
 #historyArea {
-	min-width: 380px;
+	min-width: 300px;
 	width: calc(100% - 335px);
 	background: white;
 	float: right;
@@ -158,7 +158,7 @@ tr {
 }
 
 /*The following block helps with background image layout on small devices*/
-@media screen and (max-width: 715px) {
+@media screen and (max-width: 615px) {
 	.main {
 		height: calc(100vh - 92px);
 		min-height: 1350px;
