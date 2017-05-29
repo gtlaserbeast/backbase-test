@@ -10,6 +10,7 @@ angular.module('backbaseApp.view1', ['ngRoute'])
 }])
 
 .controller('View1Ctrl', function($scope) {
+	$scope.preview = null;
 	$scope.availableBalance = 5824.76;
 	$scope.today = new Date();
 	$scope.transactionTemplate = {
@@ -27,16 +28,23 @@ angular.module('backbaseApp.view1', ['ngRoute'])
 		//TODO: SHOW MODAL + REVIEW AND THEN SUBMIT
 		if ($scope.newTransaction.amount && $scope.newTransaction.merchant) {
 			$scope.reviewTransaction();
+		} else {
+			alert('Please Complete All Fields.')
 		}
 	}
 
 	$scope.reviewTransaction = function($event) {
 		$scope.submittedTransaction = angular.copy($scope.newTransaction);
 		//TODO: connect to buttons
-		$scope.submitTransaction();
+		$scope.preview = true;
+	}
+
+	$scope.cancelTransaction = function($event) {
+		$scope.preview = null;
 	}
 
 	$scope.submitTransaction = function($event) {
+		$scope.preview = null;
 		$scope.transactionHistory.unshift($scope.submittedTransaction);
 		$scope.newTransaction = angular.copy($scope.transactionTemplate);
 		$scope.availableBalance = ($scope.availableBalance - $scope.submittedTransaction.amount).toFixed(2);

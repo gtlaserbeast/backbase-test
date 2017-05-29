@@ -65,6 +65,10 @@ tr {
 	height: calc(100% - 90px);
 }
 
+.buffer {
+	height: 30px;
+}
+
 .logo {
 	height: 40px;
 	filter: grayscale(100%);
@@ -86,6 +90,7 @@ tr {
 
 
 /*#fieldArea, #historyArea {vertical-align: top;}*/
+#previewArea {width: 300px; height: auto; background: white; float: left;}
 #fieldArea {width: 300px; height: auto; background: white; float: left;}
 #historyArea {min-width: 430px; width: calc(100% - 325px); background: white; float: right;margin: 0 auto;}
 
