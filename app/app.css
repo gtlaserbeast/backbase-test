@@ -14,8 +14,8 @@ body {
 button {
 	background: #e25a2c;
 	color: white;
-	display: inline-block;
-	margin: 0 10px 0 0;
+	display: block;
+	margin: 0 auto;
 	padding: 5px 15px;
 	font-size: 24px;
 	line-height: 1.8;
@@ -86,7 +86,7 @@ tr {
 
 
 /*#fieldArea, #historyArea {vertical-align: top;}*/
-#fieldArea {width: 300px; height: auto; background: white; float: left;margin: 0 auto;}
+#fieldArea {width: 300px; height: auto; background: white; float: left;}
 #historyArea {min-width: 430px; width: calc(100% - 325px); background: white; float: right;margin: 0 auto;}
 
 #fromValue {
