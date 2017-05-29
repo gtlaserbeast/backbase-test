@@ -113,9 +113,9 @@ tr {
 
 
 /*#fieldArea, #historyArea {vertical-align: top;}*/
-#previewArea {width: 300px; height: 350px; background: white; float: left;}
-#fieldArea {width: 300px; height: 350px; background: white; float: left;}
-#historyArea {min-width: 390px; width: calc(100% - 310px); background: white; float: right;margin: 0 auto;}
+#previewArea {width: 275px; height: 350px; background: white; float: left;}
+#fieldArea {width: 275px; height: 350px; background: white; float: left;}
+#historyArea {min-width: 380px; width: calc(100% - 285px); background: white; float: right;margin: 0 auto;}
 
 #submit {
 	background-color: #0C8397;
