@@ -10,12 +10,14 @@
 		<label class="smallText">&nbsp;{{submittedTransaction.merchant}}</label><br>
 		<B>AMOUNT:</B><br>
 		<label class="smallText">&nbsp;${{submittedTransaction.amount}}</label><br>
-		<Button id="submit" ng-click="submitTransaction()">SUBMIT</Button><br>
+		<Button id="submit" ng-click="submitTransaction()">TRANSFER</Button><br>
 		<Button id="cancel" ng-click="cancelTransaction()">cancel</Button>
 	</div>
 	<div id="fieldArea" ng-show="!preview">
 		<div class="heading">
-			<img src="assets/img/arrows.png">
+			<div>
+				<img src="assets/img/arrows.png">
+			</div>
 			<B>Make a Transfer</B>
 		</div>
 		<form name="form">
@@ -28,8 +30,8 @@
 	</div>
 	<div id="historyArea">
 		<table>
-			<thead class="heading">
-				<tr><td/><td><img src="assets/img/briefcase.png"></td><th colspan="3">Recent Transactions</th></tr>
+			<thead>
+				<tr><td/><td><img src="assets/img/briefcase.png"></td><th class="heading" colspan="3">Recent Transactions</th></tr>
 			</thead>
 			<tbody>
 				<tr ng-repeat="transaction in transactionHistory">

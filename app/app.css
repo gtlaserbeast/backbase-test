@@ -73,6 +73,7 @@ tr {
 	color: white;
 	background-color: #0C8397;
 	height: 60px;
+	display: block;
 }
 
 .logo {
@@ -84,6 +85,12 @@ tr {
 	background: white;
 	color: gray;
 	font-size: 14px;
+}
+
+.whiteCorner {
+	background-color: white;
+	height: 60px;
+	width: 60px;
 }
 
 #appLogo {
