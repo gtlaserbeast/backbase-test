@@ -13,7 +13,7 @@ Also found here:
 [https://blooming-headland-60247.herokuapp.com](https://blooming-headland-60247.herokuapp.com)
 
 ----------
-This project is built using Angularjs(1.5.0) and express(4.15.3). Angular's support of two-way data binding and templating trivialized the rendering and updating of the transaction history. 
+This project is built using Angularjs(1.5.0) and express(4.15.3). Angular's support of two-way data binding and templating trivialized the rendering and updating of the transaction history. Layout should allow for side-by-side view of fields/history on most large phones in landscape mode.
 
 
 -----------Assignment Info -----------------
