@@ -5,11 +5,11 @@
 			<B>Do You Wish To Procede With This Transaction?</B><br>
 		</div>
 		<B>FROM ACCOUNT:</B><br>
-		<label class="smallText">&nbsp;Free Checking(4692) - Available ${{availableBalance}}</label><br>
+		<label class="smallText">&nbsp;Free Checking(4692) - Available {{availableBalance | currency}}</label><br>
 		<B>TO ACCOUNT:</B><br>
 		<label class="smallText">&nbsp;{{submittedTransaction.merchant}}</label><br>
 		<B>AMOUNT:</B><br>
-		<label class="smallText">&nbsp;${{submittedTransaction.amount}}</label><br>
+		<label class="smallText">&nbsp;{{submittedTransaction.amount | currency}}</label><br>
 		<Button id="submit" ng-click="submitTransaction()">TRANSFER</Button><br>
 		<Button id="cancel" ng-click="cancelTransaction()">cancel</Button>
 	</div>
@@ -24,7 +24,7 @@
 		</div>
 		<form name="form" autocomplete="off">
 			<label>FROM ACCOUNT:</label><br>
-			<label class="smallText">Free Checking(4692) - Available ${{availableBalance}}</label><br>
+			<label class="smallText">Free Checking(4692) - Available {{availableBalance | currency}}</label><br>
 			<label>TO ACCOUNT:<br> &nbsp;<input class="smallText" type="text" name="toValue" ng-model="newTransaction.merchant"></label><br>
 			<label>AMOUNT:<br>$<input class="smallText" type="number" name="amount" ng-model="newTransaction.amount"></label><br><br>
 			<Button ng-click="validateTransaction()">SUBMIT</Button>
@@ -51,7 +51,7 @@
 							<B>{{transaction.merchant}}</B><br><small>{{transaction.transactionType}}</small>
 						</div>
 					</td>
-					<td><div><B>-${{transaction.amount | number : 2}}</B></div></td>
+					<td><div><B>-{{transaction.amount | currency}}</B></div></td>
 				</tr>
 			</tbody>
 		</table>
