@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Kanit');
 
+html {
+	min-height: 100%;
+}
+
 body {
 	font-family: 'Kanit';
 	padding: 0;
@@ -77,12 +81,9 @@ tr {
 }
 
 
-#fieldArea, #historyArea {vertical-align: top; float: left;}
-#fieldArea {width: 300px; height: auto; background: white;}
-#historyArea {width: calc(100% - 325px); background: white;}
-@media only screen and (max-device-width: 1000px){
-	#fieldArea, #historyArea {vertical-align: top; float: left;}
-}
+#fieldArea, #historyArea {vertical-align: top;}
+#fieldArea {width: 300px; height: auto; background: white; float: left;}
+#historyArea {width: calc(100% - 325px); background: white; float: right;}
 
 #fromValue {
 	background: white;
