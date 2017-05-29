@@ -15,6 +15,8 @@ Also found here:
 ----------
 This project is built using Angularjs(1.5.0) and express(4.15.3). Angular's support of two-way data binding and templating trivialized the rendering and updating of the transaction history. Layout should allow for side-by-side view of fields/history on most large phones in landscape mode.
 
+**5/29/2017 UPDATE: I've learned I probably have until Tuesday so further refinements are underway.
+
 
 -----------Assignment Info -----------------
 # Backbase Front End Assignment: Make A Transaction
