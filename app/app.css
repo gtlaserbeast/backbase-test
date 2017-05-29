@@ -40,18 +40,16 @@ button:active {
 	text-shadow: -1px 1px #964C33;
 }
 
+table, td, tr, th {
+	border-radius: 3px
+}
+
 table {
 	width: 100%;
-	border-radius: 3px;
 }
 
 td {
 	height: 33px;
-	border-radius: 3px;
-}
-
-tr {
-	border-radius: 3px;
 }
 
 .buffer {
@@ -70,6 +68,8 @@ tr {
 
 .historyCell {
 	height: 80px;
+	border-bottom: 1px solid gray;
+	border-radius: 0px;
 }
 
 .icon {
@@ -139,7 +139,7 @@ tr {
 }
 
 #historyArea {
-	min-width: 300px;
+	min-width: 280px;
 	width: calc(100% - 335px);
 	background: white;
 	float: right;
@@ -151,11 +151,6 @@ tr {
 
 #transfer {
 	background-color: #0C8397;
-}
-
-#view1 {
-	width: auto;
-	height: auto;
 }
 
 /*The following block helps with background image layout on small devices*/
