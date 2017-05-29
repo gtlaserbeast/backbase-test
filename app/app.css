@@ -44,6 +44,7 @@ input {
 	border: none;
 	border-bottom: 2px solid lightgray;
 	width: 95%;
+	font-size: 20px;
 }
 
 table, td, tr, th {
@@ -108,7 +109,7 @@ td {
 
 .previewArea {
 	width: 275px;
-	height: 370px;
+	height: 24em;
 	background: white;
 	float: left;
 	position: relative;
