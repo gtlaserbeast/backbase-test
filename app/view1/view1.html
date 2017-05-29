@@ -1,7 +1,7 @@
 <div id="view1">
 	<div class="buffer"/>
 	<div id="previewArea" ng-show="preview">
-		<div class="heading">
+		<div class="heading orangeBackground">
 			<B>Do You Wish To Procede With This Transaction?</B><br>
 		</div>
 		<B>FROM ACCOUNT:</B><br>
@@ -10,7 +10,7 @@
 		<label class="smallText">&nbsp;{{submittedTransaction.merchant}}</label><br>
 		<B>AMOUNT:</B><br>
 		<label class="smallText">&nbsp;${{submittedTransaction.amount}}</label><br>
-		<Button id="submit" ng-click="submitTransaction()">SUBMIT</Button><br>
+		<Button id="submit" ng-click="submitTransaction()">TRANSFER</Button><br>
 		<Button id="cancel" ng-click="cancelTransaction()">cancel</Button>
 	</div>
 	<div id="fieldArea" ng-show="!preview">
