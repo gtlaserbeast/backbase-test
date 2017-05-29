@@ -24,7 +24,7 @@ button {
 	border-radius: 0;
 	text-shadow: -1px 1px #964C33;
 	border: none;
-	border-radius: 3px;
+	border-radius: 2px;
 }
 
 button:focus {
