@@ -11,17 +11,13 @@ angular.module('backbaseApp.view1', ['ngRoute'])
 
 .controller('View1Ctrl', function($scope, transactionService) {
 	$scope.preview = null;
-	$scope.availableBalance = 5824.76;
+	$scope.availableBalance = transactionService.getBalance();
 	$scope.newTransaction = transactionService.initializeTransaction();
 	$scope.transactionHistory = transactionService.getTransactions();
 
 	$scope.validateTransaction = function($event) {
-		if ($scope.newTransaction.amount && $scope.newTransaction.merchant) {
-			if ($scope.availableBalance - $scope.newTransaction.amount > 0) {
-				$scope.reviewTransaction();
-			} else {
-				alert('Insufficient Funds.')
-			}
+		if (transactionService.checkFields($scope.newTransaction.merchant, $scope.newTransaction.amount)) {
+			transactionService.checkFunds($scope.newTransaction.amount) ? $scope.reviewTransaction() : alert('Insufficient Funds.');
 		} else {
 			alert('Please Complete All Fields.')
 		}
@@ -40,6 +36,7 @@ angular.module('backbaseApp.view1', ['ngRoute'])
 		$scope.preview = null;
 		$scope.transactionHistory.unshift($scope.submittedTransaction);
 		$scope.newTransaction = transactionService.initializeTransaction();
-		$scope.availableBalance = ($scope.availableBalance - $scope.submittedTransaction.amount).toFixed(2);
+		transactionService.updateBalance($scope.submittedTransaction.amount);
+		$scope.availableBalance = transactionService.getBalance();
 	}
 });

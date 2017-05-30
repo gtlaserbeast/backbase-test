@@ -5,8 +5,26 @@
 
     function transactionService() {
 
-        var transactionService = {};
         var today = new Date();
+        var transactionService = {};
+
+        transactionService.availableBalance = 5824.76;
+
+        transactionService.getBalance = function() {
+            return transactionService.availableBalance;
+        }
+
+        transactionService.updateBalance = function(amount) {
+            transactionService.availableBalance -= amount;
+        }
+
+        transactionService.checkFunds = function(amount) {
+            return (transactionService.availableBalance - amount >= 0);
+        }
+
+        transactionService.checkFields = function(merchant, amount) {
+            return (merchant && amount);
+        }
 
         transactionService.initializeTransaction = function() {
             return {
