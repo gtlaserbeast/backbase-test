@@ -17,7 +17,7 @@ This project is built using Angularjs(1.5.0) and express(4.15.3). Angular's supp
 
 **5/29/2017 UPDATE: I've learned I probably have until Tuesday so further refinements are underway.
 
-**5/29/2017 PM UPDATE: Cleaned up styles and refactored data logic to a mock service.
+**5/29/2017 PM UPDATE: Cleaned up styles and refactored data logic to a service.
 
 Thanks for the opportunity!
 
